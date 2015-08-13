@@ -1,0 +1,23 @@
+<article id="post-<$mt:EntryID$>" class="post-<$mt:EntryID$> post type-post status-publish format-standard hentry category-<mt:EntryPrimaryCategory><$mt:CategoryLabel$></mt:EntryPrimaryCategory>">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="<$mt:EntryPermalink encode_html="1"$>" rel="bookmark"><$mt:EntryTitle$></a></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<$mt:EntryBody$>
+	<p> <a href="<$mt:EntryPermalink encode_html="1"$>" class="more-link">继续阅读<span class="screen-reader-text"><$mt:EntryTitle$></span></a></p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">发布于 </span><a href="<$mt:EntryPermalink encode_html="1"$>" rel="bookmark"><time class="entry-date published updated" datetime="<$mt:EntryDate format_name="iso8601"$>"><$mt:EntryDate format="%x"$></time></a></span>
+
+	<mt:IfArchiveTypeEnabled archive_type="Category">
+  <mt:If tag="EntryPrimaryCategory">	
+		<span class="cat-links"><span class="screen-reader-text">分类 </span><mt:EntryPrimaryCategory><a href="<$mt:CategoryArchiveLink$>"><$mt:CategoryLabel$></a></mt:EntryPrimaryCategory></span>
+		  </mt:If>
+</mt:IfArchiveTypeEnabled>
+		<span class="comments-link"><a href="<$mt:EntryPermalink encode_html="1"$>#respond">发表回复</a></span>			
+	</footer><!-- .entry-footer -->
+
+</article><!-- #post-## -->

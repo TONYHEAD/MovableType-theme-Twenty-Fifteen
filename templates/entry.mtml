@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="<$mt:BlogLanguage$>" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="<$mt:PublishCharset$>">
+    <meta name="description" content="<$mt:EntryExcerpt remove_html="1" encode_html="1"$>">
+    <meta name="generator" content="<$mt:ProductName version="1"$>">
+    <title><$mt:EntryTitle encode_html="1"$> - <$mt:BlogName encode_html="1"$></title>
+    <$mt:Include module="HTML Head"$>
+    <mt:EntryPrevious><link rel="prev" href="<$mt:EntryPermalink encode_html="1"$>" title="<$mt:EntryTitle encode_html="1"$>"></mt:EntryPrevious>
+    <mt:EntryNext><link rel="next" href="<$mt:EntryPermalink encode_html="1"$>" title="<$mt:EntryTitle encode_html="1"$>"></mt:EntryNext>
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="<$mt:BlogLanguage setvar="blog_lang"$><mt:If name="blog_lang" eq="ja">ja_JP<mt:else><$mt:Var name="blog_lang"$></mt:If>">
+    <meta property="og:title" content="<$mt:EntryTitle encode_html="1"$>">
+    <meta property="og:url" content="<$mt:EntryPermalink encode_html="1"$>">
+    <meta property="og:description" content="<$mt:EntryExcerpt remove_html="1" encode_html="1"$>">
+    <meta property="og:site_name" content="<$mt:BlogName encode_html="1"$>">
+    <meta property="og:image" content="<mt:EntryAssets type="image" limit="1"><$mt:AssetThumbnailURL height="320" square="1" encode_html="1"$><mt:Else><mt:Assets type="image" tag="@SITE_ICON" limit="1"><$mt:AssetThumbnailURL height="320" square="1" encode_html="1"$><mt:Else>http://movabletype.b0.upaiyun.com/mt-static/support/theme_static/rainier/img/siteicon-sample.png</mt:Assets></mt:EntryAssets>">
+    <!-- Metadata -->
+    <meta itemprop="description" content="<$mt:EntryExcerpt remove_html="1" encode_html="1"$>">
+    <link itemprop="url" href="<$mt:EntryPermalink encode_html="1"$>">
+    <link itemprop="image" href="<mt:EntryAssets type="image" limit="1"><$mt:AssetThumbnailURL height="320" square="1" encode_html="1"$><mt:Else><mt:Assets type="image" tag="@SITE_ICON" limit="1"><$mt:AssetThumbnailURL height="320" square="1" encode_html="1"$><mt:Else>http://movabletype.b0.upaiyun.com/mt-static/support/theme_static/rainier/img/siteicon-sample.png</mt:Assets></mt:EntryAssets>">
+  </head>
+  
+  
+  
+  
+  
+  
+  
+  
+   <body class="home blog">
+    <div id="page" class="hfeed site">
+	
+
+		<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header">
+			<div class="site-branding">
+										<h1 class="site-title"><a href="<$mt:BlogURL encode_html="1"$>" rel="home"><$mt:BlogName encode_html="1"$></a></h1>
+											<p class="site-description"><$mt:BlogDescription remove_html="1" encode_html="1"$></p>
+									<button class="secondary-toggle">菜单和挂件</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+	
+	
+	
+				<div id="secondary" class="secondary">
+
+
+		<$mt:Include module="Leftsidebar"$>
+		
+
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+	
+	
+		<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+	
+		
+<article id="post-<$mt:EntryID$>" class="post-<$mt:EntryID$> post type-post status-publish format-standard hentry category-<mt:EntryPrimaryCategory><$mt:CategoryLabel$></mt:EntryPrimaryCategory>">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><$mt:EntryTitle$></h2>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	<$mt:EntryBody$>
+    <$mt:EntryMore$>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">发布于 </span><a href="<$mt:EntryPermalink encode_html="1"$>" rel="bookmark"><time class="entry-date published updated" datetime="<$mt:EntryDate format_name="iso8601"$>"><$mt:EntryDate format="%x"$></time></a></span>
+		<span class="byline"><span class="author vcard"><span class="screen-reader-text">作者 </span><a class="url fn n" href="<$mt:BlogURL encode_html="1"$>">Zheng</a></span></span>
+<mt:IfArchiveTypeEnabled archive_type="Category">
+  <mt:If tag="EntryPrimaryCategory">	
+		<span class="cat-links"><span class="screen-reader-text">分类 </span><mt:EntryPrimaryCategory><a href="<$mt:CategoryArchiveLink$>"><$mt:CategoryLabel$></a></mt:EntryPrimaryCategory></span>
+		  </mt:If>
+</mt:IfArchiveTypeEnabled>
+	</footer>
+</article><!-- #post-## -->
+
+<div id="comments" class="comments-area">
+
+	
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'klogsorg';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+			
+</div><!-- .comments-area -->
+
+	<nav class="navigation post-navigation">
+		<h2 class="screen-reader-text">文章导航</h2>
+		<div class="nav-links">
+<mt:EntryPrevious>
+<div class="nav-previous"><a href="<$mt:EntryPermalink encode_html="1"$>" rel="prev"><span class="meta-nav" aria-hidden="true">上一</span> <span class="screen-reader-text">上篇文章：</span> <span class="post-title"><$mt:EntryTitle encode_html="1"$></span></a></div>
+</mt:EntryPrevious>
+<mt:EntryNext>
+<div class="nav-next"><a href="<$mt:EntryPermalink encode_html="1"$>" rel="next"><span class="meta-nav" aria-hidden="true">下一</span> <span class="screen-reader-text">下篇文章：</span> <span class="post-title"><$mt:EntryTitle encode_html="1"$></span></a></div>
+</mt:EntryNext>
+		</div>
+	</nav>
+		
+		
+		
+	
+		
+
+
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+	
+	
+
+	
+	<footer id="colophon" class="site-footer">
+		<div class="site-info">
+						<$mt:Include module="Banner Footer"$>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+<script type='text/javascript' src='http://movabletype.b0.upaiyun.com/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">\u5c55\u5f00\u5b50\u83dc\u5355<\/span>","collapse":"<span class=\"screen-reader-text\">\u6298\u53e0\u5b50\u83dc\u5355<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://movabletype.b0.upaiyun.com/wp-content/themes/twentyfifteen/js/functions.js'></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<div id="widget-area" class="widget-area" role="complementary">
+
+<aside id="search" class="widget widget_search">
+<form method="get" class="search-form" action="http://www.movabletype.host/cgi-bin/mt/mt-search.cgi">
+<span class="screen-reader-text">搜索：</span>
+        <input type="text" name="search" value="" placeholder="搜索...">
+        <input type="hidden" name="IncludeBlogs" value="4">
+        <input type="hidden" name="limit" value="20">
+		<input type="submit" class="search-submit screen-reader-text" value="搜索" />
+</form>
+</aside>		
+
+<aside id="recent-posts" class="widget widget_recent_entries"><h2 class="widget-title">近期文章</h2>
+<mt:If tag="BlogEntryCount">
+  <mt:Entries lastn="10">
+    <mt:EntriesHeader>
+    <ul>
+    </mt:EntriesHeader>
+      <li><a href="<$mt:EntryPermalink$>"><$mt:EntryTitle$></a></li>
+    <mt:EntriesFooter>
+    </ul>
+    </mt:EntriesFooter>
+  </mt:Entries>
+</mt:If>		
+</aside>
+		
+<!--- <aside id="recent-comments" class="widget widget_recent_comments"><h2 class="widget-title">近期评论</h2>
+<mt:Unless name="ignore_recent_comments">
+  <mt:If tag="BlogCommentCount">
+    <mt:Comments lastn="10" sort_order="descend">
+      <mt:CommentsHeader>
+    <ul id="recentcomments">
+      </mt:CommentsHeader>
+      <li class="recentcomments"><span class="comment-author-link"><$mt:CommentAuthor$></span>发表在《<a href="<$mt:CommentLink$>" title="full comment on: <mt:CommentEntry><$mt:EntryTitle$></mt:CommentEntry>"><mt:CommentEntry><$mt:EntryTitle$></mt:CommentEntry></a>》</li>
+      <mt:CommentsFooter>
+    </ul>
+      </mt:CommentsFooter>
+    </mt:Comments>
+  </mt:If>
+</mt:Unless>
+</aside> used Disqus--->
+
+<mt:IfArchiveTypeEnabled archive_type="Monthly">
+    <mt:ArchiveList archive_type="Monthly">
+        <mt:ArchiveListHeader>
+<aside id="archives" class="widget widget_archive"><h2 class="widget-title"><$mt:ArchiveTypeLabel$> 文章归档</h2>	
+    <ul>
+        </mt:ArchiveListHeader>
+      <li><a href="<$mt:ArchiveLink encode_html="1"$>"><$mt:ArchiveTitle$></a></li>
+        <mt:ArchiveListFooter>
+    </ul>
+        </mt:ArchiveListFooter>
+    </mt:ArchiveList>
+</aside>
+</mt:IfArchiveTypeEnabled>
+
+<mt:IfArchiveTypeEnabled archive_type="Category">
+  <mt:If tag="BlogCategoryCount">
+<aside id="categories" class="widget widget_categories">
+  <h2 class="widget-title">分类目录</h2>
+    <mt:TopLevelCategories>
+      <mt:SubCatIsFirst>
+    <ul>
+      </mt:SubCatIsFirst>
+      <mt:If tag="CategoryCount">
+      <li class="cat-item cat-item-<$mt:CategoryLabel$>"><a href="<$mt:CategoryArchiveLink$>"<mt:If tag="CategoryDescription"> title="<$mt:CategoryDescription remove_html="1" encode_html="1"$>"</mt:If>><$mt:CategoryLabel$></a>
+      <mt:Else>
+      <li class="cat-item cat-item-<$mt:CategoryLabel$>"><$mt:CategoryLabel$>
+      </mt:If>
+      <$mt:SubCatsRecurse$>
+      </li>
+      <mt:SubCatIsLast>
+    </ul>
+      </mt:SubCatIsLast>
+    </mt:TopLevelCategories>
+  </mt:If>
+</aside>
+</mt:IfArchiveTypeEnabled>
+
+<aside id="meta" class="widget widget_meta"><h2 class="widget-title">功能</h2>			
+<ul>
+	<li><a href="/atom.xml">文章<abbr title="Really Simple Syndication">RSS</abbr></a></li>
+	<li><a href="https://www.movabletype.host/" title="基于MovableType，一个强壮、先进的信息管理系统。">MovableType</a></li>		
+</ul>
+</aside>			
+</div><!-- .widget-area -->

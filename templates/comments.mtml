@@ -1,0 +1,20 @@
+<mt:IfCommentsActive>
+<section id="comments" class="comments feedback">
+  <h2 class="title comments-header"><$mt:EntryCommentCount singular="Comment" plural="Comments" none="Comments"$></h2>
+  <mt:Comments>
+    <mt:If name="__first__">
+  <div class="comments-content">
+    </mt:If>
+    <$mt:Include module="Comment Detail"$>
+    <mt:If name="__last__">
+  </div>
+    </mt:If>
+  </mt:Comments>
+  <mt:IfCommentsAccepted>
+    <mt:IfRegistrationAllowed>
+  <p id="comment-greeting" class="message">Leave a comment</p>
+    </mt:IfRegistrationAllowed>
+  <$mt:Include module="Comment Form"$>
+  </mt:IfCommentsAccepted>
+</section>
+</mt:IfCommentsActive>

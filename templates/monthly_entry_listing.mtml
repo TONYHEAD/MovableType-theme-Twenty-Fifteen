@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="<$mt:BlogLanguage$>">
+  <head>
+    <meta charset="<$mt:PublishCharset$>">
+    <title><$mt:ArchiveTitle$> Archives - <$mt:BlogName encode_html="1"$></title>
+    <$mt:Include module="HTML Head"$>
+    <mt:ArchivePrevious><link rel="prev" href="<$mt:ArchiveLink$>" title="<$mt:ArchiveTitle encode_html="1"$>"></mt:ArchivePrevious>
+    <mt:ArchiveNext><link rel="next" href="<$mt:ArchiveLink$>" title="<$mt:ArchiveTitle encode_html="1"$>"></mt:ArchiveNext>
+  </head>
+  
+  
+  
+  
+  
+<body class="home blog">
+    <div id="page" class="hfeed site">
+	
+
+		<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header">
+			<div class="site-branding">
+										<h1 class="site-title"><a href="<$mt:BlogURL encode_html="1"$>" rel="home"><$mt:BlogName encode_html="1"$></a></h1>
+											<p class="site-description"><$mt:BlogDescription remove_html="1" encode_html="1"$></p>
+									<button class="secondary-toggle">菜单和挂件</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+	
+	
+	
+				<div id="secondary" class="secondary">
+
+
+		<$mt:Include module="Leftsidebar"$>
+		
+
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+	
+	
+		<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+
+<header class="page-header">
+				<h1 class="page-title">按月归档：<$mt:ArchiveTitle$></h1>			</header><!-- .page-header -->
+
+<mt:Entries limit="$entries_per_page" search_results="1">
+              <$mt:Include module="Entry Summary"$>
+</mt:Entries>
+
+	<nav class="navigation pagination">
+		<h2 class="screen-reader-text">文章导航</h2>
+		<div class="nav-links"><span class='page-numbers current'><span class="meta-nav screen-reader-text">页 </span>这部分还没做 1</span>
+<a class='page-numbers' href='#/page/2'><span class="meta-nav screen-reader-text">页 </span>2</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class='page-numbers' href='#/page/7'><span class="meta-nav screen-reader-text">页 </span>7</a>
+<a class="next page-numbers" href="#/page/2">下一页</a></div>
+	</nav>
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+	
+	
+
+	
+	<footer id="colophon" class="site-footer">
+		<div class="site-info">
+						<$mt:Include module="Banner Footer"$>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+<script type='text/javascript' src='http://movabletype.b0.upaiyun.com/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">\u5c55\u5f00\u5b50\u83dc\u5355<\/span>","collapse":"<span class=\"screen-reader-text\">\u6298\u53e0\u5b50\u83dc\u5355<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://movabletype.b0.upaiyun.com/wp-content/themes/twentyfifteen/js/functions.js'></script>
+
+</body>
+</html>  
