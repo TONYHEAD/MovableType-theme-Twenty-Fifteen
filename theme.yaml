@@ -59,14 +59,8 @@ elements:
             label: 'HTML Head'
           navigation:
             label: Navigation
-          pagination:
-            label: Pagination
           template_457:
             label: Leftsidebar
-          trackbacks:
-            label: Trackbacks
-          zenback:
-            label: Zenback
         page:
           page:
             label: Page
